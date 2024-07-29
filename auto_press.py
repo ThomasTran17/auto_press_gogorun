@@ -72,7 +72,7 @@ def auto_press():
         )
 
 
-print("Nhấn phím = để bắt đầu/dừng auto.")
+print("Nhấn phím = để bắt đầu auto. Nhấn giữ phím = để tạm dừng auto. ")
 print("Nhấn phím ALT + F3 để thoát.")
 
 while True:
@@ -86,7 +86,7 @@ while True:
             print("Bắt đầu auto.")
         else:
             print("Dừng auto.")
-        # Đợi cho đến khi phím SPACE được thả để tránh lặp lại việc bật/tắt
+        # Đợi cho đến khi phím = được thả để tránh lặp lại việc bật/tắt
         while keyboard.is_pressed("="):
             time.sleep(0.1)
 
